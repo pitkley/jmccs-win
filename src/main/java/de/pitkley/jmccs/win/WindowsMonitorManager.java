@@ -1,8 +1,12 @@
-package de.pitkley.jmccs.monitor;
+package de.pitkley.jmccs.win;
 
 import com.sun.jna.Platform;
 import com.sun.jna.platform.win32.Dxva2;
 import com.sun.jna.platform.win32.User32;
+import de.pitkley.jmccs.monitor.Monitor;
+import de.pitkley.jmccs.monitor.MonitorManager;
+import de.pitkley.jmccs.monitor.UnsupportedOperatingSystemException;
+import de.pitkley.jmccs.monitor.VCPStringFormatException;
 
 import java.io.IOException;
 import java.util.ArrayList;

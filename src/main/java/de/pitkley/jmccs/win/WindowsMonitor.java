@@ -1,4 +1,4 @@
-package de.pitkley.jmccs.monitor;
+package de.pitkley.jmccs.win;
 
 import com.sun.jna.Memory;
 import com.sun.jna.Native;
@@ -7,6 +7,7 @@ import com.sun.jna.platform.win32.Dxva2;
 import com.sun.jna.platform.win32.User32;
 import com.sun.jna.platform.win32.WTypes;
 import com.sun.jna.platform.win32.WinUser.MONITORINFO;
+import de.pitkley.jmccs.monitor.*;
 
 import java.io.IOException;
 import java.util.Map;
