@@ -38,6 +38,9 @@ public class WindowsMonitor implements Monitor {
         DXVA2.GetCapabilitiesStringLength(physical_monitor.hPhysicalMonitor, pdwCapabilitiesStringLengthInCharacters);
 
         int capabilitiesStringLengthInCharacters = pdwCapabilitiesStringLengthInCharacters.getValue().intValue();
+        if (capabilitiesStringLengthInCharacters <= 0) {
+            throw new VCPStringFormatException("Capability string is empty");
+        }
 
         Pointer p = new Memory(capabilitiesStringLengthInCharacters);
         WTypes.LPSTR pszASCIICapabilitiesString = new WTypes.LPSTR(p);
